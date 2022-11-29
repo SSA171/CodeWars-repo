@@ -1,7 +1,6 @@
-
+# iterator that computes the function using arguments from each of the iterables
 def to_csv_text(array):
     return "\n".join(",".join(map(str, i)) for i in array)
-
 
 def main():
     array = [[0, 1, 2, 3, 4 ],

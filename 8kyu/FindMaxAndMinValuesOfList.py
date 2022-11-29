@@ -1,6 +1,7 @@
+# returns the mininum value in list
 def minimum(arr):
     return min(arr)
-
+# returns the maximum value in list
 def maximum(arr):
     return max(arr)
 
