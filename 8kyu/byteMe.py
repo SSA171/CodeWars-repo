@@ -5,11 +5,14 @@ def total_bytes(object):
     # returns the size of the object in bytes
     return sys.getsizeof(object)
 
-def main():
-    print(total_bytes("hello"))
-    print(total_bytes("Said"))
-    print(total_bytes("Hannah"))
-    print(total_bytes("Nasser"))
 
-if __name__ == "__main__":
+def main():
+    while True:
+        n = input("Enter input: ")
+        print(total_bytes(n))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
+
+if __name__ == '__main__':
     main()
+

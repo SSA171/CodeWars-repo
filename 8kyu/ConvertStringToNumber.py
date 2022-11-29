@@ -1,9 +1,12 @@
 def square(n):
-    return n**2
+    return int(n)
 
-    
 def main():
-    print(string_to_number("1234"))
+    while True:
+        n = float(input("Enter a string number: "))
+        print(square(n))
+        if input("Do You Want To Continue [y/n] ?") != "y":
+            break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

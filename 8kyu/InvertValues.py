@@ -3,8 +3,12 @@ def invert(lst):
     return [-x for x in lst]
 
 def main():
-    print(invert([1,2,3,4,5]))
-    print(invert([-1,-2,-3,-4,-5]))
+    while True:
+        n = input("Enter input: ").split()
+        f = [float(x) for x in n]
+        print(invert(f))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

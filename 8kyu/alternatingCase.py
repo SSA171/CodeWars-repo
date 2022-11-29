@@ -13,12 +13,15 @@ def to_alternating_case(string):
     # returns the alternating letter string to a joined string
     return ''.join(alternating)
 
+
+
+
 def main():
-    print(to_alternating_case("hello world"))
-    print(to_alternating_case("HELLO WOlD"))
-    print(to_alternating_case("hElLo WoRlD"))
-    print(to_alternating_case("HeLlO wOrLd"))
+    while True:
+        n = input("Enter input: ")
+        print(to_alternating_case(n))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

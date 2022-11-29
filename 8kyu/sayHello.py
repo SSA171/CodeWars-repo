@@ -2,7 +2,11 @@ def say_hello(name):
     return f"Hello, {name}"
 
 def main():
-    print(say_hello('Mr. Spock'))
+    while True:
+        n = input("Enter input: ")
+        print(say_hello(n))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

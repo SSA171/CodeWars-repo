@@ -10,7 +10,12 @@ def find_multiples(integer, limit):
     return multiplies
 
 def main():
-    print(find_multiples(5, 55))
+    while True:
+        integer = int(input("Enter input: "))
+        limit = int(input("Enter limit: "))
+        print(find_multiples(integer, limit))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

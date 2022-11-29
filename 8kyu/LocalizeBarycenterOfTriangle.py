@@ -5,9 +5,17 @@ def bar_triang(point_a, point_b, point_c):
 
     return [round(x,4),round(y,4)]
 
-
 def main():
-    print(bar_triang([4, 6], [12, 4], [10, 10]))
+    while True:
+        point_a = input("Point a: ").split()
+        a = [float(x) for x in point_a]
+        point_b = input("Point b: ").split()
+        b = [float(x) for x in point_b]
+        point_c = input("Point c: ").split()
+        c = [float(x) for x in point_c]
+        print(bar_triang(a, b, c))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

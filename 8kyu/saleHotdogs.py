@@ -4,7 +4,11 @@ def sale_hotdogs(n):
     elif n >= 10: return 90 * n
 
 def main():
-    print(sale_hotdogs(5))
+    while True:
+        n = input("Enter input: ")
+        print(sale_hotdogs(float(n)))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

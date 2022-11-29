@@ -3,7 +3,12 @@ def multi(a, b):
 
 
 def main():
-    print(multi(5, 25))
+    while True:
+        a = float(input("Enter input: "))
+        b = float(input("Enter input: "))
+        print(multi(a,b))
+        if input("Do You Want To Continue [y/n] ? ") != "y":
+            break
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
