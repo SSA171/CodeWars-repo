@@ -1,2 +1,1 @@
- Continue [y/n] ? ") != "y":
-            break
+ = input("Enter input: ")
